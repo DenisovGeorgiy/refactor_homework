@@ -1,5 +1,5 @@
 create table if not exists genre (
-	genre_id serial primary key,
+	genre_id serial PRIMARY KEY,
 	genre_name varchar(50) not null unique
 );
 
