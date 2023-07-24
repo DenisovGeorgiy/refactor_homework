@@ -24,7 +24,7 @@ or lower(track_name) like '% мой' or lower(track_name) like '% мой %' or l
 --Задание номер 3
 
 select genre_name, count(executor_name) from executor e
-join genre_executor ge  on e.executor_id = ge.executor_id
+join executor_genre ge  on e.executor_id = ge.executor_id
 join genre g on ge.genre_id = g.genre_id
 group by g.genre_id;
 
